@@ -31,7 +31,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging IniciandoClasses",
+    "git-widget-placeholder": "IniciandoClasses",
     "last_opened_file_path": "C:/Classes EventExpress",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,6 +59,7 @@
       <workItem from="1711737225703" duration="6012000" />
       <workItem from="1711746642154" duration="756000" />
       <workItem from="1711747438637" duration="522000" />
+      <workItem from="1711748038141" duration="557000" />
     </task>
     <servers />
   </component>
