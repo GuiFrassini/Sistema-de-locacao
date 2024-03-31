@@ -19,35 +19,35 @@ class Contrato{
     public function getId(){
         return $this->id;
     }
-    public function setId(){
+    public function setId($id){
         $this->id = $id;
     }
 
     public function getLocador(){
         return $this->locador;
     }
-    public function setLocador(){
+    public function setLocador($locador){
         $this->locador = $locador;
     }
 
     public function getUsuario(){
         return $this->usuario;
     }
-    public function setUsuario(){
+    public function setUsuario($usuario){
         $this->usuario = $usuario;
     }
 
     public function getAnuncio(){
         return $this->anuncio;
     }
-    public function setAnuncio(){
+    public function setAnuncio($anuncio){
         $this->anuncio = $anuncio;
     }
 
     public function getAdicionais(){
         return $this->adicionais;
     }
-    public function setAdicionais(){
+    public function setAdicionais($adicionais){
         $this->adicionais = $adicionais;
     }
 }

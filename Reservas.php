@@ -25,49 +25,49 @@ class Reservas{
     public function getId(){
         return $this->id;
     }
-    public function setId(){
+    public function setId($id){
         $this->id = $id;
     }
 
     public function getNome(){
         return $this->nome;
     }
-    public function setNome(){
+    public function setNome($nome){
         $this->nome = $nome;
     }
 
     public function getAnuncio(){
         return $this->anuncio;
     }
-    public function setAnuncio(){
+    public function setAnuncio($anuncio){
         $this->anuncio = $anuncio;
     }
 
     public function getValor(){
         return $this->valor;
     }
-    public function setValor(){
+    public function setValor($valor){
         $this->valor = $valor;
     }
 
     public function getContrato(){
         return $this->contrato;
     }
-    public function setContrato(){
+    public function setContrato($contrato){
         $this->contrato = $contrato;
     }
 
     public function getFormaPagamento(){
         return $this->formaPagamento;
     }
-    public function setFormaPagamento(){
+    public function setFormaPagamento($formaPagamento){
         $this->formaPagamento = $formapagamento;
     }
 
     public function getStatus(){
         return $this->status;
     }
-    public function setStatus(){
+    public function setStatus($status){
         $this->status = $status;
     }
 }

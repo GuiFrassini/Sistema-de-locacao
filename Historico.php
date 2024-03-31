@@ -16,28 +16,28 @@ class Historico{
     public function getId(){
         return $this->id;
     }
-    public function setId(){
+    public function setId($id){
         $this->id = $id;
     }
 
     public function getNome(){
         return $this->nome;
     }
-    public function setNome(){
+    public function setNome($nome){
         $this->nome = $nome;
     }
 
     public function getReservas(){
         return $this->reservas;
     }
-    public function setReservas(){
+    public function setReservas($reservas){
         $this->reservas = $reservas;
     }
 
     public function getValor(){
         return $this->valor;
     }
-    public function setValor(){
+    public function setValor($valor){
         $this->valor = $valor;
     }
 
