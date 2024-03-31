@@ -4,7 +4,6 @@ class Endereco
 {
     private $id;
     private $cidade;
-    private $cidade;
     private $cep;
     private $numero;
     private $bairro;
