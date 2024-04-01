@@ -11,6 +11,9 @@ function TesteAnuncio()
     $enderecoLocal = new Endereco('1', 'Curitiba', '82341-187', '888', 'Capão Raso');
 
     $locador = new Locador('22', 'Jóse Almeida Teste', 'almeidalocações@gmail.com', '41 4002-8933', '12123844221', '12345678911', $endereco);
+
+//teste git no ubuntu
+
 }
 
 TesteAnuncio();
