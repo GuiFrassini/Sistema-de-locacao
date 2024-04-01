@@ -42,11 +42,11 @@ class anuncios
     {
         $this->nome = $nome;
     }
-    public function getCidade()
+    public function getCategoria()
     {
         return $this->categoria;
     }
-    public function setCidade($categoria)
+    public function setCategoria($categoria)
     {
         $this->categoria = $categoria;
     }
@@ -66,6 +66,22 @@ class anuncios
     {
         $this->capacidade = $capacidade;
     }
+    public function getDescricao()
+    {
+        return $this->descricao;
+    }
+    public function setDescricao($descricao)
+    {
+        $this->descricao = $descricao;
+    }
+    public function getLocador()
+    {
+        return $this->locador;
+    }
+    public function setLocador($locador)
+    {
+        $this->locador= $locador;
+    }
     public function getValor()
     {
         return $this->valor;
@@ -73,5 +89,21 @@ class anuncios
     public function setValor($valor)
     {
         $this->valor = $valor;
+    }
+    public function getAgenda()
+    {
+        return $this->agenda;
+    }
+    public function setAgenda($agenda)
+    {
+        $this->agenda= $agenda;
+    }
+    public function getStatus()
+    {
+        return $this->status;
+    }
+    public function setStatus($status)
+    {
+        $this->status = $status;
     }
 }
