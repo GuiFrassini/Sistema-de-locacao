@@ -4,16 +4,16 @@ class Anuncio
 {
     private $id;
     public $nome;
-    public $categoria;
-    public $endereco;
+    public Categoria $categoria;
+    public Endereco $endereco;
     public $capacidade;
     public $descricao;
-    public $locador;
+    public Locador $locador;
     public $valor;
     public $agenda;
-    public $status;
+    public Status $status;
 
-    public function __construct(int $id, string $nome, string $categoria, int $endereco, int $capacidade, string $descricao, string $locador, int $valor, string $agenda, string $status)
+    public function __construct(int $id, string $nome, Categoria $categoria, Endereco $endereco, int $capacidade, string $descricao, Locador $locador, int $valor, string $agenda, Status $status)
     {
         $this->id = $id;
         $this->nome = $nome;
@@ -47,25 +47,16 @@ class Anuncio
         $this->nome = $nome;
     }
 
-    public function getCategoria(): string
+    public function getCategoria(): Categoria
     {
         return $this->categoria;
     }
 
-    public function setCategoria(string $categoria): void
-    {
-        $this->categoria = $categoria;
-    }
-
-    public function getEndereco(): int
+    public function getEndereco(): Endereco
     {
         return $this->endereco;
     }
 
-    public function setEndereco(int $endereco): void
-    {
-        $this->endereco = $endereco;
-    }
 
     public function getCapacidade(): int
     {
@@ -87,14 +78,9 @@ class Anuncio
         $this->descricao = $descricao;
     }
 
-    public function getLocador(): string
+    public function getLocador(): Locador
     {
         return $this->locador;
-    }
-
-    public function setLocador(string $locador): void
-    {
-        $this->locador = $locador;
     }
 
     public function getValor(): int
@@ -117,14 +103,9 @@ class Anuncio
         $this->agenda = $agenda;
     }
 
-    public function getStatus(): string
+    public function getStatus(): Status
     {
         return $this->status;
-    }
-
-    public function setStatus(string $status): void
-    {
-        $this->status = $status;
     }
 
 
