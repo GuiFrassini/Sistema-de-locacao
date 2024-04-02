@@ -2,7 +2,7 @@
 
 require_once('../Entidades/Locador.php');
 require_once('../Entidades/Endereco.php');
-require_once('../Entidades/anuncio.php');
+require_once('../Entidades/Anuncio.php');
 require_once('../Entidades/Categoria.php');
 
 function TesteAnuncio()
