@@ -1,6 +1,6 @@
 <?php
 
-class anuncios
+class Anuncio
 {
     private $id;
     public $nome;
@@ -13,7 +13,7 @@ class anuncios
     public $agenda;
     public $status;
 
-    public function __construct($id,$nome,$categoria,$endereco,$capacidade,$descricao,$locador,$valor,$agenda,$status)
+    public function __construct(int $id, string $nome, string $categoria, int $endereco, int $capacidade, string $descricao, string $locador, int $valor, string $agenda, string $status)
     {
         $this->id = $id;
         $this->nome = $nome;
@@ -26,84 +26,106 @@ class anuncios
         $this->agenda = $agenda;
         $this->status = $status;
     }
-    public function getId()
+
+    public function getId(): int
     {
         return $this->id;
     }
-    public function setId($id)
+
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
-    public function getNome()
+
+    public function getNome(): string
     {
         return $this->nome;
     }
-    public function setNome($nome)
+
+    public function setNome(string $nome): void
     {
         $this->nome = $nome;
     }
-    public function getCategoria()
+
+    public function getCategoria(): string
     {
         return $this->categoria;
     }
-    public function setCategoria($categoria)
+
+    public function setCategoria(string $categoria): void
     {
         $this->categoria = $categoria;
     }
-    public function getEndereco()
+
+    public function getEndereco(): int
     {
         return $this->endereco;
     }
-    public function setEndereco($endereco)
+
+    public function setEndereco(int $endereco): void
     {
         $this->endereco = $endereco;
     }
-    public function getCapacidade()
+
+    public function getCapacidade(): int
     {
         return $this->capacidade;
     }
-    public function setCapacidade($capacidade)
+
+    public function setCapacidade(int $capacidade): void
     {
         $this->capacidade = $capacidade;
     }
-    public function getDescricao()
+
+    public function getDescricao(): string
     {
         return $this->descricao;
     }
-    public function setDescricao($descricao)
+
+    public function setDescricao(string $descricao): void
     {
         $this->descricao = $descricao;
     }
-    public function getLocador()
+
+    public function getLocador(): string
     {
         return $this->locador;
     }
-    public function setLocador($locador)
+
+    public function setLocador(string $locador): void
     {
-        $this->locador= $locador;
+        $this->locador = $locador;
     }
-    public function getValor()
+
+    public function getValor(): int
     {
         return $this->valor;
     }
-    public function setValor($valor)
+
+    public function setValor(int $valor): void
     {
         $this->valor = $valor;
     }
-    public function getAgenda()
+
+    public function getAgenda(): string
     {
         return $this->agenda;
     }
-    public function setAgenda($agenda)
+
+    public function setAgenda(string $agenda): void
     {
-        $this->agenda= $agenda;
+        $this->agenda = $agenda;
     }
-    public function getStatus()
+
+    public function getStatus(): string
     {
         return $this->status;
     }
-    public function setStatus($status)
+
+    public function setStatus(string $status): void
     {
         $this->status = $status;
     }
+
+
 }
