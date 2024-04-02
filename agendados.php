@@ -1,19 +1,19 @@
 <?php
 
-class agendados
+class Agendados
 {
     private $id;
     public $nome;
     public $reservas;
-    public $contrato;
-    public function __construct($id, $nome, $reservas, $contrato)
+    public Contrato $contrato;
+    public function __construct(int $id, string $nome, string $reservas, Contrato $contrato)
     {
         $this->id = $id;
         $this->nome = $nome;
         $this->reservas = $reservas;
         $this->contrato = $contrato;
     }
-    public function getId()
+    public function getId() : int
     {
         return $this->id;
     }
@@ -21,7 +21,7 @@ class agendados
     {
         $this->id = $id;
     }
-    public function getNome()
+    public function getNome() : string
     {
         return $this->nome;
     }
@@ -29,7 +29,7 @@ class agendados
     {
         $this->nome = $nome;
     }
-    public function getReservas()
+    public function getReservas() : string
     {
         return $this->reservas;
     }
@@ -37,7 +37,7 @@ class agendados
     {
         $this->reservas = $reservas;
     }
-    public function getContrato()
+    public function getContrato() : Contrato
     {
         return $this->contrato;
     }
