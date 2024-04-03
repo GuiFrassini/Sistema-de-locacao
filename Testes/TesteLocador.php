@@ -1,5 +1,7 @@
 <?php
 
+//Este arquivo testa a conexão entre a classe Endereço e locador
+
 require_once ('../Entidades/Locador.php');
 require_once ('../Entidades/Endereco.php');
 
@@ -17,7 +19,7 @@ function TesteLocador()
     echo "CPF: ". $locador->getCpf() . "\n";
     echo "Endereço completo -" . $locador->getEndereco() . "\n"."\n";
 
-
+    //Criei um __toString que trouxe o endereço de forma completa afin de agilizar o teste.
 }
 
 TesteLocador();
