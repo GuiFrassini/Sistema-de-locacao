@@ -2,12 +2,12 @@
 
 class Contrato{
     private $id;
-    private $locador;
-    private $usuario;
-    private $anuncio;
-    private $adicionais;
+    private Locador $locador;
+    private Usuario $usuario;
+    private Anuncio $anuncio;
+    private Adicionais $adicionais;
 
-    public function __construct($id, $locador, $usuario, $anuncio, $adicionais){
+    public function __construct(int $id, Locador $locador, Usuario $usuario, Anuncio $anuncio, Adicionais $adicionais){
         $this->id = $id;
         $this->locador = $locador;
         $this->usuario = $usuario;
@@ -16,38 +16,38 @@ class Contrato{
 
     }
 
-    public function getId(){
+    public function getId(): int{
         return $this->id;
     }
-    public function setId($id){
+    public function setId(int $id){
         $this->id = $id;
     }
 
-    public function getLocador(){
+    public function getLocador(): Locador{
         return $this->locador;
     }
-    public function setLocador($locador){
+    public function setLocador(Locador $locador){
         $this->locador = $locador;
     }
 
-    public function getUsuario(){
+    public function getUsuario(): Usuario {
         return $this->usuario;
     }
-    public function setUsuario($usuario){
+    public function setUsuario(Usuario $usuario){
         $this->usuario = $usuario;
     }
 
-    public function getAnuncio(){
+    public function getAnuncio(): Anuncio{
         return $this->anuncio;
     }
-    public function setAnuncio($anuncio){
+    public function setAnuncio(Anuncio $anuncio){
         $this->anuncio = $anuncio;
     }
 
-    public function getAdicionais(){
+    public function getAdicionais(): Adicionais{
         return $this->adicionais;
     }
-    public function setAdicionais($adicionais){
+    public function setAdicionais(Adicionais $adicionais){
         $this->adicionais = $adicionais;
     }
 }

@@ -3,14 +3,14 @@
 class Reservas{
     private $id;
     private $nome;
-    private $anuncio;
+    private Anuncio $anuncio;
     private $agenda;
     private $valor;
-    private $contrato;
+    private Contrato $contrato;
     private $formaPagamento;
-    private $status;
+    private Status $status;
 
-    public function __construct($id, $nome, $anuncio, $agenda, $valor, $contrato, $formaPagamento, $status){
+    public function __construct(int $id, string $nome, Anuncio $anuncio, string $agenda, int $valor, Contrato $contrato, string $formaPagamento, Status $status){
         $this->id = $id;
         $this->nome = $nome;
         $this->anuncio = $anuncio;
@@ -22,52 +22,52 @@ class Reservas{
 
     }
 
-    public function getId(){
+    public function getId(): int{
         return $this->id;
     }
-    public function setId($id){
+    public function setId(int $id){
         $this->id = $id;
     }
 
-    public function getNome(){
+    public function getNome() :string{
         return $this->nome;
     }
-    public function setNome($nome){
+    public function setNome(string $nome){
         $this->nome = $nome;
     }
 
-    public function getAnuncio(){
+    public function getAnuncio(): Anuncio {
         return $this->anuncio;
     }
-    public function setAnuncio($anuncio){
+    public function setAnuncio(Anuncio $anuncio){
         $this->anuncio = $anuncio;
     }
 
-    public function getValor(){
+    public function getValor(): int{
         return $this->valor;
     }
-    public function setValor($valor){
+    public function setValor(int $valor){
         $this->valor = $valor;
     }
 
-    public function getContrato(){
+    public function getContrato(): Contrato {
         return $this->contrato;
     }
-    public function setContrato($contrato){
+    public function setContrato(Contrato $contrato){
         $this->contrato = $contrato;
     }
 
-    public function getFormaPagamento(){
+    public function getFormaPagamento(): string{
         return $this->formaPagamento;
     }
-    public function setFormaPagamento($formaPagamento){
+    public function setFormaPagamento(string $formaPagamento){
         $this->formaPagamento = $formapagamento;
     }
 
-    public function getStatus(){
+    public function getStatus(): Status {
         return $this->status;
     }
-    public function setStatus($status){
+    public function setStatus(Status $status){
         $this->status = $status;
     }
 }

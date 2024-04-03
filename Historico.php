@@ -3,41 +3,41 @@
 class Historico{
     private $id;
     private $nome;
-    private $reservas;
+    private Reservas $reservas;
     private $valor;
 
-    public function __construct($id, $nome, $reservas, $valor){
+    public function __construct(int $id, string $nome, Reservas $reservas, int $valor){
         $this->id = $id;
         $this->nome = $nome;
         $this->reservas = $reservas;
         $this->valor = $valor;
     }
 
-    public function getId(){
+    public function getId(): int {
         return $this->id;
     }
-    public function setId($id){
+    public function setId(int $id){
         $this->id = $id;
     }
 
-    public function getNome(){
+    public function getNome(): string{
         return $this->nome;
     }
-    public function setNome($nome){
+    public function setNome(string $nome){
         $this->nome = $nome;
     }
 
-    public function getReservas(){
+    public function getReservas(): Reservas{
         return $this->reservas;
     }
-    public function setReservas($reservas){
+    public function setReservas(Reservas $reservas){
         $this->reservas = $reservas;
     }
 
-    public function getValor(){
+    public function getValor(): int{
         return $this->valor;
     }
-    public function setValor($valor){
+    public function setValor(int $valor){
         $this->valor = $valor;
     }
 
