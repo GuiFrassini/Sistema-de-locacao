@@ -26,28 +26,16 @@ class Contrato{
     public function getLocador(): Locador{
         return $this->locador;
     }
-    public function setLocador(Locador $locador){
-        $this->locador = $locador;
-    }
 
     public function getUsuario(): Usuario {
         return $this->usuario;
-    }
-    public function setUsuario(Usuario $usuario){
-        $this->usuario = $usuario;
     }
 
     public function getAnuncio(): Anuncio{
         return $this->anuncio;
     }
-    public function setAnuncio(Anuncio $anuncio){
-        $this->anuncio = $anuncio;
-    }
 
     public function getAdicionais(): Adicionais{
         return $this->adicionais;
-    }
-    public function setAdicionais(Adicionais $adicionais){
-        $this->adicionais = $adicionais;
     }
 }

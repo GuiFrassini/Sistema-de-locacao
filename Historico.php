@@ -30,9 +30,6 @@ class Historico{
     public function getReservas(): Reservas{
         return $this->reservas;
     }
-    public function setReservas(Reservas $reservas){
-        $this->reservas = $reservas;
-    }
 
     public function getValor(): int{
         return $this->valor;

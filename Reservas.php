@@ -39,9 +39,6 @@ class Reservas{
     public function getAnuncio(): Anuncio {
         return $this->anuncio;
     }
-    public function setAnuncio(Anuncio $anuncio){
-        $this->anuncio = $anuncio;
-    }
 
     public function getValor(): int{
         return $this->valor;
@@ -53,9 +50,6 @@ class Reservas{
     public function getContrato(): Contrato {
         return $this->contrato;
     }
-    public function setContrato(Contrato $contrato){
-        $this->contrato = $contrato;
-    }
 
     public function getFormaPagamento(): string{
         return $this->formaPagamento;
@@ -66,8 +60,5 @@ class Reservas{
 
     public function getStatus(): Status {
         return $this->status;
-    }
-    public function setStatus(Status $status){
-        $this->status = $status;
     }
 }
