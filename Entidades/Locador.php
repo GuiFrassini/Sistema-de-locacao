@@ -8,9 +8,9 @@ class Locador
     private $telefone;
     private $cpf;
     private $cnpj;
-    private $endereco;
+    private Endereco $endereco;
 
-    public function __construct($id, $nome, $email, $telefone, $cpf, $cnpj, $endereco)
+    public function __construct(int $id, string $nome, string $email, string $telefone, string $cpf,  string $cnpj, Endereco $endereco)
     {
         $this->id = $id;
         $this->nome = $nome;
@@ -21,76 +21,70 @@ class Locador
         $this->endereco = $endereco;
     }
 
-
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
-    public function setId($id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
-    public function getNome()
+    public function getNome(): string
     {
         return $this->nome;
     }
 
-    public function setNome($nome): void
+    public function setNome(string $nome): void
     {
         $this->nome = $nome;
     }
 
-
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    public function setEmail($email): void
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function getTelefone()
+    public function getTelefone(): string
     {
         return $this->telefone;
     }
 
-    public function setTelefone($telefone): void
+    public function setTelefone(string $telefone): void
     {
         $this->telefone = $telefone;
     }
 
-    public function getCpf()
+    public function getCpf(): string
     {
         return $this->cpf;
     }
 
-    public function setCpf($cpf): void
+    public function setCpf(string $cpf): void
     {
         $this->cpf = $cpf;
     }
 
-    public function getCnpj()
+    public function getCnpj(): string
     {
         return $this->cnpj;
     }
 
-    public function setCnpj($cnpj): void
+    public function setCnpj(string $cnpj): void
     {
         $this->cnpj = $cnpj;
     }
 
-    public function getEndereco()
+    public function getEndereco(): Endereco
     {
         return $this->endereco;
     }
 
-    public function setEndereco($endereco): void
-    {
-        $this->endereco = $endereco;
-    }
 
 }

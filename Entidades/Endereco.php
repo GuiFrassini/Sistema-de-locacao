@@ -8,7 +8,7 @@ class Endereco
     private $numero;
     private $bairro;
 
-    public function __construct($id, $cidade, $cep, $numero, $bairro)
+    public function __construct(int $id, int $cidade, string $cep, int $numero, string $bairro)
     {
         $this->id = $id;
         $this->cidade = $cidade;
@@ -17,61 +17,59 @@ class Endereco
         $this->bairro = $bairro;
     }
 
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
-
-    public function setId($id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
-
-    public function getCidade()
+    public function getCidade(): int
     {
         return $this->cidade;
     }
 
-
-    public function setCidade($cidade): void
+    public function setCidade(int $cidade): void
     {
         $this->cidade = $cidade;
     }
 
-
-    public function getCep()
+    public function getCep(): string
     {
         return $this->cep;
     }
 
-    public function setCep($cep): void
+    public function setCep(string $cep): void
     {
         $this->cep = $cep;
     }
 
-
-    public function getNumero()
+    public function getNumero(): int
     {
         return $this->numero;
     }
 
-
-    public function setNumero($numero): void
+    public function setNumero(int $numero): void
     {
         $this->numero = $numero;
     }
 
-    public function getBairro()
+    public function getBairro(): string
     {
         return $this->bairro;
     }
 
-    public function setBairro($bairro): void
+    public function setBairro(string $bairro): void
     {
         $this->bairro = $bairro;
     }
 
+    public function __toString()
+    {
+        return " Cidade: " . $this->getCidade() . ", CEP: " . $this->getCep() . ", Número: " . $this->getNumero() . ", Bairro: " . $this->getBairro();
+    }
 
 }
