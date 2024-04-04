@@ -86,5 +86,9 @@ class Locador
         return $this->endereco;
     }
 
+    public function __toString()
+    {
+        return $this->nome;
+    }
 
 }
