@@ -8,7 +8,7 @@ require_once ('../Entidades/Status.php');
 
 function TesteAnuncio()
 {
-    $status = Status::DisponivelParaLocacao();
+    $status = Status::DisponivelParaLocacao;
 
     $endereco =  new Endereco(1,4106902,'81293-123',223,'Sitio Cercado');
 
@@ -19,18 +19,20 @@ function TesteAnuncio()
     $categoria = new Categoria(1,'Infantil','Categoria destinada para crianças menores de 10 anos.');
 
     $anuncio = new Anuncio(1,'Salão Infaltil', $categoria, $enderecoLocal, 80,'Salão com espaço kids e fliperama para sua festa temática.',
-                                $locador,700.00, '21/10/2024',$status);
+                            $locador,700.00, '21/10/2024',$status);
 
     echo "-------Descrição do Anuncio---------". "\n". "\n";
     echo "          ". $anuncio->getNome(). "\n". "\n";
     echo "Descrição: ". $anuncio->getDescricao(). "\n";;
-    echo "Categoria: ". $anuncio->getCategoria()."\n";
-    echo "Endereço: " . $anuncio->getEndereco()."\n";
+    echo "Categoria: ". $anuncio->getCategoria()->getNome()."\n";
+    echo "Bairro: " . $anuncio->getEndereco()->getBairro() . "\n";
     echo "Capacidade: " . $anuncio->getCapacidade()." Pessoas". "\n";
-    echo "Nome do locador: " . $anuncio->getLocador()."\n";
+    echo "Nome do locador: " . $anuncio->getLocador()->getNome()."\n";
     echo "Valor: R$". $anuncio->getValor()."\n";
-    echo "Dia desejado para locação: ".$anuncio->getAgenda()."\n";
-    echo "Status: ". $anuncio->getStatus()."\n";
+    echo "Dia desejado para locação: ".$anuncio->getAgenda()."\n"."\n";
+    print_r($status);
+    echo "\n";
+
 }
 
 TesteAnuncio();

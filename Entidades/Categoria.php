@@ -41,9 +41,4 @@ class Categoria
     {
         $this->descricao = $descricao;
     }
-
-    public function __toString(): string
-    {
-        return $this->getNome() .  " -- " . $this->getDescricao();
-    }
 }

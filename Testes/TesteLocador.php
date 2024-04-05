@@ -17,9 +17,10 @@ function TesteLocador()
     echo "Email para contato: " . $locador->getEmail() ."\n";
     echo "Telefone: " . $locador->getTelefone(). "\n";
     echo "CPF: ". $locador->getCpf() . "\n";
-    echo "Endereço completo -" . $locador->getEndereco() . "\n"."\n";
+    echo "Cidade: ". $locador->getEndereco()->getCidade() . "\n";
+    echo "CEP:" . $locador->getEndereco()->getCep() ." Numero:". $locador->getEndereco()->getNumero()."\n"."\n";
 
-    //Criei um __toString que trouxe o endereço de forma completa afin de agilizar o teste.
+
 }
 
 TesteLocador();

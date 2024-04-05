@@ -67,9 +67,4 @@ class Endereco
         $this->bairro = $bairro;
     }
 
-    public function __toString()
-    {
-        return " Cidade: " . $this->getCidade() . ", CEP: " . $this->getCep() . ", Número: " . $this->getNumero() . ", Bairro: " . $this->getBairro();
-    }
-
 }
