@@ -1,5 +1,7 @@
 <?php
 
+//Este aquivo testa a ligação entre as entidades  Endereçõ,Locador,Anuncio,Categoria,Status.
+
 require_once ('../Entidades/Locador.php');
 require_once ('../Entidades/Anuncio.php');
 require_once ('../Entidades/Categoria.php');
