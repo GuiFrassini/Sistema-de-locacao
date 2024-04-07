@@ -20,12 +20,12 @@ function TesteAnuncio()
 
     $categoria = new Categoria(1,'Infantil','Categoria destinada para crianças menores de 10 anos.');
 
-    $anuncio = new Anuncio(1,'Salão Infaltil', $categoria, $enderecoLocal, 80,'Salão com espaço kids e fliperama para sua festa temática.',
+    $anuncio = new Anuncio(1,'Salão Infantil', $categoria, $enderecoLocal, 80,'Salão com espaço kids e fliperama para sua festa temática.',
                             $locador,700.00, '21/10/2024',$status);
 
     echo "-------Descrição do Anuncio---------". "\n". "\n";
     echo "          ". $anuncio->getNome(). "\n". "\n";
-    echo "Descrição: ". $anuncio->getDescricao(). "\n";;
+    echo "Descrição: ". $anuncio->getDescricao(). "\n";
     echo "Categoria: ". $anuncio->getCategoria()->getNome()."\n";
     echo "Bairro: " . $anuncio->getEndereco()->getBairro() . "\n";
     echo "Capacidade: " . $anuncio->getCapacidade()." Pessoas". "\n";
@@ -34,6 +34,32 @@ function TesteAnuncio()
     echo "Dia desejado para locação: ".$anuncio->getAgenda()."\n"."\n";
     print_r($status);
     echo "\n";
+
+
+    //Teste para verficar os setters das classes.
+
+    $anuncio->setNome('Salão de festas');
+    $anuncio->setDescricao('Salão de festas com capacidade de 180 pessoas, Fechamos pacotes para Anivesario de 15 anos!!');
+    $anuncio->getCategoria()->setNome('Aniversario, 15 anos');
+    $anuncio->getEndereco()->setBairro('Tarumã');
+    $anuncio->setCapacidade(180);
+    $anuncio->getLocador()->setNome('Joel do Som');
+    $anuncio->setValor(900.00);
+    $anuncio->setAgenda('31/10/2024');
+
+    echo "----------------Teste Setter---------------". "\n". "\n";
+    echo "          ". $anuncio->getNome(). "\n". "\n";
+    echo "Descrição: ". $anuncio->getDescricao(). "\n";
+    echo "Categoria: ". $anuncio->getCategoria()->getNome()."\n";
+    echo "Bairro: " . $anuncio->getEndereco()->getBairro() . "\n";
+    echo "Capacidade: " . $anuncio->getCapacidade()." Pessoas". "\n";
+    echo "Nome do locador: " . $anuncio->getLocador()->getNome()."\n";
+    echo "Valor: R$". $anuncio->getValor().',00'."\n";
+    echo "Dia desejado para locação: ".$anuncio->getAgenda()."\n"."\n";
+    print_r($status);
+    echo "\n";
+
+
 
 }
 
