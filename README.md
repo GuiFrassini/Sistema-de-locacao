@@ -7,3 +7,6 @@ Integrantes do grupo:
 - Brendon Robert
 - Guilherme Araujo Nishimoto
 - Guilherme Frassini
+
+
+Obs: A implementação final das classes está na branch AllTestes
